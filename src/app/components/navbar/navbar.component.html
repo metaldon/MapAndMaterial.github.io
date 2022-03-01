@@ -1,13 +1,23 @@
+<input type="checkbox" id="check">
 <div class="menuNav">
-    
     <nav class="navbar navbar-dark bg-dark">
-        <a href="#" class="navbar-brand">Material and Map</a>
+        <a href="/" class="navbar-brand left_area">My first <span>app</span> </a>
+       <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation" id="check">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+          <label for="check">
+              <i class="navbar-toggler-icon" id="sidebar_btn"></i>
+          </label>
+        
         <ul class="nav nav-tabs">
             <li class="nav-item justify-content-center">
                 <a routerLink="/materials" class="nav-link">Material</a>
             </li>
             <li class="nav-item justify-content-center">
                 <a routerLink="/map" class="nav-link">Map</a>
+            </li> 
+             <li class="nav-item justify-content-center">
+                <a routerLink="/produit" class="nav-link">Gestion des produits</a>
             </li>
         </ul>
         <form class="form-inline">
@@ -15,5 +25,10 @@
             <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
         </form>
     </nav>
-
 </div>
+
+<div class="sidebar">
+    <a routerLink="/materials" class="nav-link">Material</a>
+    <a routerLink="/map" class="nav-link">Map</a>
+    <a routerLink="/produit" class="nav-link">Gestion des produits</a>
+  </div>
