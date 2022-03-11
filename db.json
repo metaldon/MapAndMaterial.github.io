@@ -1,0 +1,28 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "nom": "Ordinateur",
+            "prix": 3900,
+            "quantite": 200,
+            "selectionne": true,
+            "disponible": true 
+        },
+        {
+            "id": 2,
+            "nom": "Imprimante",
+            "prix": 5500,
+            "quantite": 600,
+            "selectionne": true,
+            "disponible": true 
+        },
+        {
+            "id": 3,
+            "nom": "Smartphone",
+            "prix": 2000,
+            "quantite": 130,
+            "selectionne": false,
+            "disponible": true 
+        }
+    ]
+}
