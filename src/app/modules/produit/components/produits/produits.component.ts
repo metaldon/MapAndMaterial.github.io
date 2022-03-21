@@ -1,8 +1,11 @@
+import { ProduitaddComponent } from './../produitadd/produitadd.component';
 import { catchError, map, Observable, of, startWith } from 'rxjs';
 import { ProductsService } from './../../../../services/products.service';
 import { Component, OnInit } from '@angular/core';
 import { Product } from 'src/app/model/product.model';
 import { AppDataState, DataStateEnum } from 'src/app/state/product.state';
+import { BsModalService } from 'ngx-bootstrap/modal';
+import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
 
 
 @Component({
@@ -14,7 +17,13 @@ export class ProduitsComponent implements OnInit {
   products$:Observable<AppDataState<Product[]>> | null=null;
   readonly DataStateEnum = DataStateEnum;
 
-  constructor(private ProductsService:ProductsService) { }
+  constructor(
+    private ProductsService: ProductsService,
+    private modalService: BsModalService
+    ) {}
+
+
+ 
 
   ngOnInit(): void {
   }
@@ -68,7 +77,8 @@ export class ProduitsComponent implements OnInit {
       this.onGetAllProducts();
     })
   }
-onNewProduct()  {
-  
-}
+  onNewProduct()  {
+    const modalRef: BsModalRef = this.modalService.show(ProduitaddComponent, {class: 'modal-danger modal-lg '});
+  }
 } 
+

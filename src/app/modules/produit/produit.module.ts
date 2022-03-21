@@ -1,23 +1,32 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { ModalModule, BsModalService } from 'ngx-bootstrap/modal';
+import { AlertModule} from 'ngx-bootstrap/alert';
+import { BsDropdownModule} from 'ngx-bootstrap/dropdown';
 import { ProduitRoutingModule } from './produit-routing.module';
 import { ProduitsComponent } from './components/produits/produits.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ProduitsAddComponent } from './components/produitAdd/produits-add/produits-add.component';
+import { ProduitaddComponent } from './components/produitadd/produitadd.component';
+
 
 
 @NgModule({
   declarations: [
     ProduitsComponent,
-    ProduitsAddComponent
+    ProduitaddComponent
   ],
   imports: [
     CommonModule,
     ProduitRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    BsDropdownModule.forRoot(),
+    ModalModule.forRoot(),
+    AlertModule
   
-  ]
+  ],
+  providers: [BsModalService]
+ 
 })
 export class ProduitModule { }
