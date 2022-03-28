@@ -12,7 +12,8 @@ import { ProductsService } from 'src/app/services/products.service';
 })
 export class ProduitaddComponent implements OnInit {
 
-  public form: FormGroup = this.fb.group({})
+  public form: FormGroup = this.fb.group({});
+  public isCreate: Boolean = false;
   constructor( 
     public modalService: BsModalService,
     public fb: FormBuilder,
@@ -38,8 +39,14 @@ export class ProduitaddComponent implements OnInit {
   createProduct() {
     const produit: Product = this.form.value;
     this.productsService.createProduct(produit).toPromise().then(data => {
-      console.log(data)
-    });
+       this.isCreate = true;
+       this.closeModal();
+    }).catch(() => {
+      this.isCreate = false;
+      this.closeModal();
+    }).finally(() => {
+      this.closeModal();
+    })
   
   }
 

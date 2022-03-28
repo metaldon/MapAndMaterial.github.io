@@ -1,4 +1,5 @@
 import { ProduitaddComponent } from './../produitadd/produitadd.component';
+import { ProduitmodComponent } from './../produitmod/produitmod.component';
 import { catchError, map, Observable, of, startWith } from 'rxjs';
 import { ProductsService } from './../../../../services/products.service';
 import { Component, OnInit } from '@angular/core';
@@ -79,6 +80,10 @@ export class ProduitsComponent implements OnInit {
   }
   onNewProduct()  {
     const modalRef: BsModalRef = this.modalService.show(ProduitaddComponent, {class: 'modal-danger modal-lg '});
+  }
+  onEdit(p: Product) {
+    const initialState = { product: p}
+    const modalRef: BsModalRef = this.modalService.show(ProduitmodComponent, { initialState, class: 'modal-danger modal-lg '});
   }
 } 
 

@@ -2,9 +2,9 @@
   "products": [
     {
       "id": 1,
-      "nom": "Ordinateur",
-      "prix": 3900,
-      "quantite": 200,
+      "nom": "Ordinateur portable",
+      "prix": 39000,
+      "quantite": 2000,
       "selectionne": true,
       "disponible": true
     },
@@ -23,110 +23,6 @@
       "quantite": 130,
       "selectionne": false,
       "disponible": true
-    },
-    {
-      "id": 4,
-      "nom": "fhj",
-      "prix": 0,
-      "quantite": 0,
-      "selectionne": false,
-      "disponible": false
-    },
-    {
-      "id": 5,
-      "nom": "ghkug",
-      "prix": 0,
-      "quantite": 0,
-      "selectionne": false,
-      "disponible": false
-    },
-    {
-      "id": 6,
-      "nom": "",
-      "prix": 0,
-      "quantite": 0,
-      "selectionne": false,
-      "disponible": false
-    },
-    {
-      "id": 7,
-      "nom": "",
-      "prix": 0,
-      "quantite": 0,
-      "selectionne": false,
-      "disponible": false
-    },
-    {
-      "id": 8,
-      "nom": "",
-      "prix": 0,
-      "quantite": 0,
-      "selectionne": false,
-      "disponible": false
-    },
-    {
-      "id": 9,
-      "nom": "",
-      "prix": 0,
-      "quantite": 0,
-      "selectionne": false,
-      "disponible": false
-    },
-    {
-      "id": 10,
-      "nom": "",
-      "prix": 0,
-      "quantite": 0,
-      "selectionne": false,
-      "disponible": false
-    },
-    {
-      "id": 11,
-      "nom": "",
-      "prix": 0,
-      "quantite": 0,
-      "selectionne": false,
-      "disponible": false
-    },
-    {
-      "id": 12,
-      "nom": "y8",
-      "prix": 0,
-      "quantite": 0,
-      "selectionne": false,
-      "disponible": false
-    },
-    {
-      "id": 13,
-      "nom": "y8",
-      "prix": 0,
-      "quantite": 0,
-      "selectionne": false,
-      "disponible": false
-    },
-    {
-      "id": 14,
-      "nom": "y8",
-      "prix": 0,
-      "quantite": 0,
-      "selectionne": false,
-      "disponible": false
-    },
-    {
-      "id": 15,
-      "nom": "y8",
-      "prix": 0,
-      "quantite": 0,
-      "selectionne": false,
-      "disponible": false
-    },
-    {
-      "id": 16,
-      "nom": "y8",
-      "prix": 0,
-      "quantite": 0,
-      "selectionne": false,
-      "disponible": false
     }
   ]
 }

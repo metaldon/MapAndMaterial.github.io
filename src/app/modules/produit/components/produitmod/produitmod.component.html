@@ -1,13 +1,16 @@
 <div class="modal-header">
-  <h4 class="modal-title pull-left">Ajouter un produit</h4>
-  <button type="button" class="close btn-close pull-right btn btn-danger btn-lg" aria-label="Close" (click)="closeModal()">
+  <h4 class="modal-title pull-left">Modifier le produit</h4>
+  <button type="button" class="close btn-close pull-right btn btn-danger btn-lg" aria-label="Close"
+    (click)="closeModal()">
     <span aria-hidden="true" class="visually-hidden">&times;</span>
   </button>
 </div>
- 
-<div class="modal-body">
 
-  <form [formGroup]="form" class="was-validated" >
+
+
+<div class="modal-body">
+ 
+    <form [formGroup]="form" class="was-validated">
       <div class="form-group">
         <label for="nom">Nom: </label>
         <input formControlName="nom" type="text" class="form-control" id="nom" required>
@@ -22,21 +25,21 @@
       </div>
       <div class="row mb-6 case">
         <div class="form-check">
-          <input formControlName="selectionne" class="form-check-input" type="checkbox" value="Selectionne" id="selectionne">
+          <input formControlName="selectionne" class="form-check-input" type="checkbox" value="Selectionne"
+            id="selectionne">
           <label class="form-check-label" for="selectionne">Selectionné</label>
         </div>
         <div class="form-check">
-          <input formControlName="disponible" class="form-check-input" type="checkbox" value="Disponible" id="disponible">
+          <input formControlName="disponible" class="form-check-input" type="checkbox" value="Disponible"
+            id="disponible">
           <label class="form-check-label" for="disponible">Disponible</label>
         </div>
       </div>
     </form>
-  </div>
 
+</div>
 
 <div class="modal-footer pull-right">
-   <button  (click)="closeModal()" class="btn btn-danger ml-4 btn-lg" type="submit">Annuler</button>
-   <button (click)="createProduct()" class="btn btn-primary btn-lg " >Créer</button>
+  <button (click)="closeModal()" class="btn btn-danger ml-4 btn-lg" type="submit">Annuler</button>
+  <button (click)="updateProduct()" class="btn btn-primary btn-lg ">Créer</button>
 </div>
-  
-

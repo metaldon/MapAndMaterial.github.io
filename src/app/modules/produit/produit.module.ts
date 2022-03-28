@@ -8,13 +8,15 @@ import { ProduitRoutingModule } from './produit-routing.module';
 import { ProduitsComponent } from './components/produits/produits.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProduitaddComponent } from './components/produitadd/produitadd.component';
+import { ProduitmodComponent } from './components/produitmod/produitmod.component';
 
 
 
 @NgModule({
   declarations: [
     ProduitsComponent,
-    ProduitaddComponent
+    ProduitaddComponent,
+    ProduitmodComponent
   ],
   imports: [
     CommonModule,

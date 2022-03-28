@@ -62,6 +62,9 @@
                             <span *ngIf="p.selectionne">Non selectionné</span>
                             <span *ngIf="!p.selectionne">Selectionné</span>
                         </button> -->
+                        <button (click)="onEdit(p)"  class="btn btn-primary">
+                        <!-- <span class="fa fa-edit"></span> -->Modifier
+                        </button> 
                     
                         <button class="btn btn-danger mx-3 " (click)="onDelete(p)">
                            <!-- <span class="fa fa-trash-o"></span> -->Supp
